@@ -1,0 +1,61 @@
+
+<!--	script of template for Todos    -->
+	<script type="text/template" id="item-template">
+    <div class="view">
+      <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+      <label><%= title %></label>
+      <a class="destroy"></a>
+    </div>
+    <input class="edit" type="text" value="<%= title %>" />
+  </script>
+
+  <script type="text/template" id="stats-template">
+    <% if (done) { %>
+      <a id="clear-completed">Clear <%= done %> completed <%= done == 1 ? 'item' : 'items' %></a>
+    <% } %>
+    <div class="todo-count"><b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
+  </script>
+
+<!--  script of template for modules and info -->
+  <script type="text/template" id="module-tenplate">
+	<div class="module-view">
+	  <ul class="thumbnails">
+	  <% $.each(Modules, function(i, module){ %>
+	  <li class="item2-grid" id="module" + <%= i %>>      // id = moduele1
+		<div></div>
+	  </li>
+	  <% })%>
+	</div>
+  </script>
+  
+  <script type="text/template" id="module-info-tenplate">
+	<div class="module-info-view">
+	  <div class="collapse">
+		<div class="accordion" id="accordion1">
+		  
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#view-anns-header">Announcements</a>
+			</div>
+			<div id="view-anns-body" class="accordion-body collapse" style="height: 0px; ">
+			  <div class="accordion-inner">
+				Announcement Body
+			  </div>
+            </div>
+		  </div>
+		  
+		  <div class="accordion-group">
+			<div class="accordion-heading">
+			  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#view-workbins-header">Workbins</a>
+			</div>
+			<div id="view-workbins-body" class="accordion-body in collapse" style="height: 0px; ">
+			  <div class="accordion-inner">
+				Workbins Body
+			  </div>
+			</div>
+		  </div>
+		
+		</div>
+	  </div>
+	</div>
+  </script>

@@ -1,0 +1,833 @@
+{
+	"Results": [
+		{
+			"Announcements": [
+				{
+					"ID": "0aca5798-7207-41df-a822-5412addeb310",
+					"Title": "iCreate welcome",
+					"Description": "To all participants,<br />\r\n<br />\r\nYou may access the trial module and post testing data to these modules and tools for the purpose of your testing on the mobile devices.",
+					"Url": "",
+					"ExpiryDate": "/Date(1347958680000+0800)/",
+					"ExpiryDate_js": "2012-09-18T16:58:00",
+					"CreatedDate": "/Date(1337590680000+0800)/",
+					"CreatedDate_js": "2012-05-21T16:58:00",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"isRead": true
+				}
+			],
+			"Forums": [
+				{
+					"ID": "2fa02b5c-1f54-4242-8ded-ad2fa914d20d",
+					"Title": "iCreate Mobility Challenge Trial Data (1)",
+					"ExpiryDate": "/Date(1346428740000+0800)/",
+					"ExpiryDate_js": "2012-08-31T23:59:00",
+					"WelcomeMessage": null,
+					"BadgeTool": 0,
+					"Headings": [],
+					"hasItems": false,
+					"SortingOrder": 0
+				}
+			],
+			"Workbins": [
+				{
+					"ID": "10c6dbbf-f7b7-49a2-bf3f-6a98e4058c2f",
+					"Title": "iCreate Mobility Challenge Trial Data (1)",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": null,
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Published": true,
+					"BadgeTool": 2,
+					"Folders": []
+				}
+			],
+			"Webcasts": [],
+			"Gradebooks": [],
+			"Polls": [],
+			"ID": "573627a0-27ef-4b85-9cb9-ac2e0d9f7482",
+			"CourseLevel": "1",
+			"CourseCode": "iCMC/2BMetro/1",
+			"CourseName": "iCreate Mobility Challenge Trial Data (1)",
+			"CourseDepartment": "",
+			"CourseSemester": "Semester 3",
+			"CourseAcadYear": "2011/2012",
+			"CourseOpenDate": "/Date(1337529600000+0800)/",
+			"CourseOpenDate_js": "2012-05-21T00:00:00",
+			"CourseCloseDate": "/Date(1346428740000+0800)/",
+			"CourseCloseDate_js": "2012-08-31T23:59:00",
+			"CourseMC": "0",
+			"isActive": "Y",
+			"Permission": "S",
+			"Creator": {
+				"UserID": "citivle",
+				"Name": "Ivle Web Master",
+				"Email": null,
+				"Title": null,
+				"UserGuid": "00000000-0000-0000-0000-000000000001",
+				"AccountType": null
+			},
+			"hasGradebookItems": false,
+			"hasTimetableItems": false,
+			"hasGroupsItems": false,
+			"hasClassGroupsForSignUp": false,
+			"hasGuestRosterItems": false,
+			"hasClassRosterItems": false,
+			"hasWeblinkItems": false,
+			"hasLecturerItems": false,
+			"hasDescriptionItems": false,
+			"hasReadingItems": false,
+			"hasAnnouncementItems": false,
+			"hasProjectGroupItems": false,
+			"hasProjectGroupsForSignUp": false,
+			"hasConsultationItems": false,
+			"hasConsultationSlotsForSignUp": false,
+			"Badge": 2,
+			"BadgeAnnouncement": 0,
+			"WebLinks": [],
+			"Lecturers": [
+				{
+					"ID": "4e0c03f1-cd13-4cba-a8ce-b9c2c487f687",
+					"User": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": "MS",
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Role": "Lecturer                                                                                            ",
+					"Order": 1,
+					"ConsultHrs": null
+				}
+			],
+			"Descriptions": [
+				{
+					"ID": "1e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Aims & Objectives",
+					"Description": "<font face=\"Verdana,\" size=\"1\">This module introduces students to the systematic analysis of the grammar of modern standard English. We will examine common topics in the phonology, morphology and syntax of the English language. The effect of language contact on English will also be discussed. The module is descriptive in nature. Through examining the grammar of English, students will be exposed to important analytical concepts in corpus and theoretical linguistics.</font>",
+					"Order": 1
+				},
+				{
+					"ID": "2e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Prerequisites",
+					"Description": "<font face=\"Verdana,\" size=\"1\">Must be registered as a Graduate Student in the University or with the approval of the Department</font>",
+					"Order": 2
+				},
+				{
+					"ID": "907f00f7-0fe1-423a-9030-42a62fa306b4",
+					"Title": "Workload",
+					"Description": "<font face=\"Verdana,\" size=\"1\">0-3-0-2-5</font>",
+					"Order": 9
+				}
+			],
+			"ReadingFormatted": [],
+			"ReadingUnformatted": []
+		},
+		{
+			"Announcements": [
+				{
+					"ID": "0fd765b4-b099-4419-b331-98e70b20edb5",
+					"Title": "NUS Arts Festival",
+					"Description": "The NUS Arts Festival is back! Bringing together youthful arts talents and stellar industry professionals, the three-week long festival will celebrate the hustle and bustle of vibrant Asian cities. Catch the series of gigs, film screenings, performances and installations from 9 March - 25 March!<br />\r\n",
+					"Url": "",
+					"ExpiryDate": "/Date(1347959520000+0800)/",
+					"ExpiryDate_js": "2012-09-18T17:12:00",
+					"CreatedDate": "/Date(1337591580000+0800)/",
+					"CreatedDate_js": "2012-05-21T17:13:00",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"isRead": true
+				},
+				{
+					"ID": "9ef128e6-60d0-47f8-ab7c-b49b107fbfb2",
+					"Title": "Montage 2012",
+					"Description": "Good photography knows no boundaries. Take part in Montage 2012, the annual photography competition organised by the NUS Photographic Society! Submit your photo entry by 20 May and stand to win attractive prizes! Find out more at <a href=\"http://www.montage.sg\" rel=\"nofollow nofollow\" target=\"_blank\">www.montage.sg</a>.",
+					"Url": "",
+					"ExpiryDate": "/Date(1347959460000+0800)/",
+					"ExpiryDate_js": "2012-09-18T17:11:00",
+					"CreatedDate": "/Date(1337591520000+0800)/",
+					"CreatedDate_js": "2012-05-21T17:12:00",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"isRead": true
+				},
+				{
+					"ID": "fe87500a-db24-44e5-bd65-77cf3680eb1a",
+					"Title": "UTown Residential Programme Event for Freshmen ",
+					"Description": "Don&rsquo;t miss out on this opportunity to find out how you can enrich your campus experience through the multidisciplinary and innovative University Town Residential Programme (UTRP) which extends your learning beyond the classroom. Drop by UTown on 11 May 2012 to find out more!",
+					"Url": "",
+					"ExpiryDate": "/Date(1347959280000+0800)/",
+					"ExpiryDate_js": "2012-09-18T17:08:00",
+					"CreatedDate": "/Date(1337591340000+0800)/",
+					"CreatedDate_js": "2012-05-21T17:09:00",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"isRead": false
+				},
+				{
+					"ID": "bfbeb62d-e681-4220-95ab-e51786d31e98",
+					"Title": "The Change is Me!",
+					"Description": "Student blogger Jason shares his experience meeting Singapore&rsquo;s Deputy Prime Minister Teo Chee Hean and other government leaders in Beijing! Find out how the meeting went and what they discussed at The Change is Me!",
+					"Url": "",
+					"ExpiryDate": "/Date(1347959280000+0800)/",
+					"ExpiryDate_js": "2012-09-18T17:08:00",
+					"CreatedDate": "/Date(1337591460000+0800)/",
+					"CreatedDate_js": "2012-05-21T17:11:00",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"isRead": false
+				}
+			],
+			"Forums": [
+				{
+					"ID": "3fce5515-79ce-4393-aa57-9894814bd02e",
+					"Title": "iCreate Mobility Challenge Trial Data (2)",
+					"ExpiryDate": "/Date(1346428740000+0800)/",
+					"ExpiryDate_js": "2012-08-31T23:59:00",
+					"WelcomeMessage": null,
+					"BadgeTool": 0,
+					"Headings": [],
+					"hasItems": false,
+					"SortingOrder": 0
+				}
+			],
+			"Workbins": [
+				{
+					"ID": "fbb4f736-fc1c-4453-9dfb-cbc9a1647b71",
+					"Title": "iCreate Mobility Challenge Trial Data (2)",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": null,
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Published": true,
+					"BadgeTool": 2,
+					"Folders": []
+				}
+			],
+			"Webcasts": [],
+			"Gradebooks": [],
+			"Polls": [],
+			"ID": "f5c2be78-32a6-43bf-af4f-f2233022b164",
+			"CourseLevel": "1",
+			"CourseCode": "iCMC/2BMetro/2",
+			"CourseName": "iCreate Mobility Challenge Trial Data (2)",
+			"CourseDepartment": "",
+			"CourseSemester": "Semester 3",
+			"CourseAcadYear": "2011/2012",
+			"CourseOpenDate": "/Date(1337529600000+0800)/",
+			"CourseOpenDate_js": "2012-05-21T00:00:00",
+			"CourseCloseDate": "/Date(1346428740000+0800)/",
+			"CourseCloseDate_js": "2012-08-31T23:59:00",
+			"CourseMC": "0",
+			"isActive": "Y",
+			"Permission": "S",
+			"Creator": {
+				"UserID": "citivle",
+				"Name": "Ivle Web Master",
+				"Email": null,
+				"Title": null,
+				"UserGuid": "00000000-0000-0000-0000-000000000001",
+				"AccountType": null
+			},
+			"hasGradebookItems": false,
+			"hasTimetableItems": false,
+			"hasGroupsItems": false,
+			"hasClassGroupsForSignUp": false,
+			"hasGuestRosterItems": false,
+			"hasClassRosterItems": false,
+			"hasWeblinkItems": false,
+			"hasLecturerItems": false,
+			"hasDescriptionItems": false,
+			"hasReadingItems": false,
+			"hasAnnouncementItems": false,
+			"hasProjectGroupItems": false,
+			"hasProjectGroupsForSignUp": false,
+			"hasConsultationItems": false,
+			"hasConsultationSlotsForSignUp": false,
+			"Badge": 4,
+			"BadgeAnnouncement": 2,
+			"WebLinks": [
+				{
+					"ID": "b949ef14-dca6-4ee1-bc43-e755727a5c0d",
+					"URL": "http://www.cit.nus.edu.sg/icreate/",
+					"Description": "iCreate Website",
+					"Order": 1,
+					"Rating": 0,
+					"SiteType": ""
+				},
+				{
+					"ID": "4e8f10f0-0fea-41b1-9f4d-369f40e5231c",
+					"URL": "http://ivle.nus.edu.sg/forum/forum.aspx?forumid=63558881-b29e-44da-9c58-2d869a7b2dc7",
+					"Description": "iCreate Forum",
+					"Order": 2,
+					"Rating": 0,
+					"SiteType": ""
+				},
+				{
+					"ID": "35b9b321-3d68-453d-bc12-5b35773d2aa2",
+					"URL": "http://wiki.nus.edu.sg/display/ivlelapi",
+					"Description": "LAPI",
+					"Order": 3,
+					"Rating": 0,
+					"SiteType": ""
+				}
+			],
+			"Lecturers": [
+				{
+					"ID": "c6ae4b6c-e95e-4b5b-a345-725596f74d9c",
+					"User": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": "MS",
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Role": "Lecturer                                                                                            ",
+					"Order": 1,
+					"ConsultHrs": null
+				}
+			],
+			"Descriptions": [
+				{
+					"ID": "1e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Aims & Objectives",
+					"Description": "Learn the basics of creating and&nbsp;managing a course in&nbsp;IVLE, NUS&#39;s&nbsp;Learning or Course Management System. Participants will get an overview of&nbsp;the layout and navigation, have an opportunity to place materials in a sample course.",
+					"Order": 1
+				},
+				{
+					"ID": "2e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Prerequisites",
+					"Description": "<li>\r\n\tThis workshop gives a basic introduction to IVLE and is ideal for new staff who have little or no knowledge of IVLE.</li>\r\n<li>\r\n\tBasic computer skills and basic Web navigation skills would be useful</li>\r\n",
+					"Order": 2
+				},
+				{
+					"ID": "4e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Schedule",
+					"Description": "<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl2_lblCourseInfo\"><font color=\"#000000\">Weekly discussions</font></span>",
+					"Order": 4
+				},
+				{
+					"ID": "5e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Synopsis",
+					"Description": "<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl3_lblCourseInfo\"><font color=\"#000000\">IVLE (Integrated Virtual Learning Environment) is a learning management system designed to facilitate and supplement teaching and thereby, promote student learning at NUS. A comprehensive introduction to IVLE, this hands-on workshop will enable you to create and manage a module with emphasis on the commonly used tools like the Lesson Plan and the workbin. It will also help participants have a brief overview of the tools that are available in IVLE.</font></span>",
+					"Order": 5
+				},
+				{
+					"ID": "8e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Assessment",
+					"Description": "<li>\r\n\tAssessment will be based on the participation in the chats, forums and polls.&nbsp;</li>\r\n<li>\r\n\tA&nbsp;one page summary report of what you gained by this course.</li>\r\n",
+					"Order": 8
+				},
+				{
+					"ID": "adec5037-b32a-4f1d-a2a3-b24df778bcff",
+					"Title": "Lecture Slides",
+					"Description": "<table width=\"100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<p>\n\t\t\t\t\t<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl15_lblCourseInfo\"><font color=\"#000000\">You can&nbsp;go to the WORKBIN to down load slides.</font></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n",
+					"Order": 9
+				}
+			],
+			"ReadingFormatted": [],
+			"ReadingUnformatted": []
+		},
+		{
+			"Announcements": [
+				{
+					"ID": "8bd56363-4437-42bf-ac9a-62de3357bca7",
+					"Title": "iCreate Mobility Challenge 2012",
+					"Description": "<p>\r\n\tCool mobile apps that surprise and delight the NUS students &mdash; built by developers like you!</p>\r\n<p>\r\n\tThis competition aims to challenge you to create <b>mobile apps</b> to enhance student&#39;s education experience and campus life on mobile platforms. If you have what it takes, come and join us in this year&#39;s iCreate Mobility Challenge which gives you the opportunity to showcase your talent and your creativity. This is the perfect chance to help improve and enrich the students&rsquo; experience at NUS.</p>\r\n<p>\r\n\tWinning entries will receive attractive prizes.</p>\r\n",
+					"Url": "",
+					"ExpiryDate": "/Date(1347958800000+0800)/",
+					"ExpiryDate_js": "2012-09-18T17:00:00",
+					"CreatedDate": "/Date(1337590800000+0800)/",
+					"CreatedDate_js": "2012-05-21T17:00:00",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"isRead": false
+				}
+			],
+			"Forums": [
+				{
+					"ID": "4ad01fd3-f790-4de4-bf83-fdbe77cdf706",
+					"Title": "iCreate Mobility Challenge Trial Data (3)",
+					"ExpiryDate": "/Date(1346428740000+0800)/",
+					"ExpiryDate_js": "2012-08-31T23:59:00",
+					"WelcomeMessage": null,
+					"BadgeTool": 0,
+					"Headings": [],
+					"hasItems": false,
+					"SortingOrder": 0
+				}
+			],
+			"Workbins": [
+				{
+					"ID": "97e923e4-b1ff-4e07-a9f7-58422b60715f",
+					"Title": "iCreate Mobility Challenge Trial Data (3)",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": null,
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Published": true,
+					"BadgeTool": 2,
+					"Folders": []
+				}
+			],
+			"Webcasts": [],
+			"Gradebooks": [],
+			"Polls": [],
+			"ID": "26dd07c8-043f-4260-9af1-3fead4a9ae72",
+			"CourseLevel": "1",
+			"CourseCode": "iCMC/2BMetro/3",
+			"CourseName": "iCreate Mobility Challenge Trial Data (3)",
+			"CourseDepartment": "",
+			"CourseSemester": "Semester 3",
+			"CourseAcadYear": "2011/2012",
+			"CourseOpenDate": "/Date(1337529600000+0800)/",
+			"CourseOpenDate_js": "2012-05-21T00:00:00",
+			"CourseCloseDate": "/Date(1346428740000+0800)/",
+			"CourseCloseDate_js": "2012-08-31T23:59:00",
+			"CourseMC": "0",
+			"isActive": "Y",
+			"Permission": "S",
+			"Creator": {
+				"UserID": "citivle",
+				"Name": "Ivle Web Master",
+				"Email": null,
+				"Title": null,
+				"UserGuid": "00000000-0000-0000-0000-000000000001",
+				"AccountType": null
+			},
+			"hasGradebookItems": false,
+			"hasTimetableItems": false,
+			"hasGroupsItems": false,
+			"hasClassGroupsForSignUp": false,
+			"hasGuestRosterItems": false,
+			"hasClassRosterItems": false,
+			"hasWeblinkItems": false,
+			"hasLecturerItems": false,
+			"hasDescriptionItems": false,
+			"hasReadingItems": false,
+			"hasAnnouncementItems": false,
+			"hasProjectGroupItems": false,
+			"hasProjectGroupsForSignUp": false,
+			"hasConsultationItems": false,
+			"hasConsultationSlotsForSignUp": false,
+			"Badge": 3,
+			"BadgeAnnouncement": 1,
+			"WebLinks": [
+				{
+					"ID": "0bd04002-cd5a-43c4-8aed-e916637f808c",
+					"URL": "http://www.facebook.com",
+					"Description": "facebook",
+					"Order": 1,
+					"Rating": 0,
+					"SiteType": ""
+				},
+				{
+					"ID": "7456930d-738d-4c2f-9f8f-2a86ee7e03e7",
+					"URL": "http://www.google.com.sg",
+					"Description": "Google",
+					"Order": 2,
+					"Rating": 1,
+					"SiteType": ""
+				},
+				{
+					"ID": "45b54381-7f2b-4c13-8c32-f0dfd3b98313",
+					"URL": "http://www.nus.edu.sg",
+					"Description": "NUS",
+					"Order": 3,
+					"Rating": 2,
+					"SiteType": ""
+				}
+			],
+			"Lecturers": [
+				{
+					"ID": "40d3e6f5-9476-44c3-a041-055b1e2bcb9e",
+					"User": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": "MS",
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Role": "Lecturer                                                                                            ",
+					"Order": 1,
+					"ConsultHrs": null
+				}
+			],
+			"Descriptions": [
+				{
+					"ID": "1e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Aims & Objectives",
+					"Description": "<p class=\"Default\">\n\t<span style=\"FONT-FAMILY: 'Times New Roman'; FONT-SIZE: 10pt\"><font><font size=\"3\">The aim of the module is to introduce students to the modern concepts in biology and to enable them to evaluate independently the potential benefits and risks of the biotechnological revolution and its implications for society. It focuses on how genes and our understanding of it had impacted, are and will be impacting, our lives as individuals and our society at large. While the module covers broad themes of genetics and biotechnology including related ethical issues and implications, it also provides sufficient grounding of fundamental concepts to ensure students of diverse background can appreciate the significance of past, present and future developments of genetic knowledge on societies. </font></font></span></p>\n",
+					"Order": 1
+				},
+				{
+					"ID": "2e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Prerequisites",
+					"Description": "<span id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl1_lblCourseInfo\">Preclusion: AB1234.&nbsp;<strong>Not for students taking Life Sciences major/minor, FST, Pharmacy and Bioengineering major.</strong></span><br />\n<span id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl1_lblCourseInfo\"><strong>Please refer to CORs&nbsp;&nbsp;</strong></span><br />\n<span id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl1_lblCourseInfo\"><strong><u><u><a href=\"http://nus.edu.sg/cors/index.html\"><u>http://nus.edu.sg/cors/index.html</u></a></u></u></strong></span><br />\n<strong>for more information.</strong>",
+					"Order": 2
+				},
+				{
+					"ID": "3e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Teaching Modes",
+					"Description": "<span id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl2_lblCourseInfo\">Lectures, independent study and CAL-based.</span>",
+					"Order": 3
+				},
+				{
+					"ID": "4e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Schedule",
+					"Description": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width: 613px\" width=\"767\">\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th style=\"width: 139px\">\r\n\t\t\t\t<strong>LECTURES:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></th>\r\n\t\t\t<th colspan=\"2\" style=\"width: 474px\">\r\n\t\t\t\tTUESDAYS &amp; THURSDAYS</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th style=\"width: 139px\">\r\n\t\t\t\t<strong>TIME:</strong></th>\r\n\t\t\t<th style=\"width: 222px\">\r\n\t\t\t\t1000 &ndash; 1200 hrs</th>\r\n\t\t\t<th style=\"width: 252px\">\r\n\t\t\t\t1400 &ndash; 1600 hrs</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<th style=\"width: 139px\">\r\n\t\t\t\t<strong>VENUE:</strong></th>\r\n\t\t\t<th colspan=\"2\" style=\"width: 474px\">\r\n\t\t\t\tLT21</th>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t</tbody>\r\n</table>\r\n<font size=\"+0\">&nbsp;</font><br />\r\n<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" width=\"1148\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td rowspan=\"2\" style=\"width: 60px; height: 19px\">\r\n\t\t\t\t<h2>\r\n\t\t\t\t\t<font size=\"+0\">WK</font></h2>\r\n\t\t\t</td>\r\n\t\t\t<td rowspan=\"2\" style=\"width: 78px; height: 19px\">\r\n\t\t\t\t<h2>\r\n\t\t\t\t\t<font size=\"+0\">MONTH</font></h2>\r\n\t\t\t</td>\r\n\t\t\t<td colspan=\"4\" style=\"width: 780px; height: 19px\">\r\n\t\t\t\t<font size=\"+0\"><strong>LECTURES</strong></font></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 192px; height: 19px\">\r\n\t\t\t\t<font size=\"+0\"><strong>TUESDAYS</strong><br />\r\n\t\t\t\t<strong>(</strong>1000 &ndash; 1200 hrs<strong>)</strong></font></td>\r\n\t\t\t<td style=\"width: 180px; height: 19px\">\r\n\t\t\t\t<font size=\"+0\"><strong>TUESDAYS</strong><br />\r\n\t\t\t\t<strong>(</strong>1400 &ndash; 1600 hrs<strong>)</strong></font></td>\r\n\t\t\t<td style=\"width: 204px; height: 19px\">\r\n\t\t\t\t<font size=\"+0\"><strong>THURSDAYS</strong><br />\r\n\t\t\t\t<strong>(</strong>1000 &ndash; 1200 hrs<strong>)</strong></font></td>\r\n\t\t\t<td style=\"width: 204px; height: 19px\">\r\n\t\t\t\t<font size=\"+0\"><strong>THURSDAYS</strong><br />\r\n\t\t\t\t<strong>(</strong>1400 &ndash; 1600 hrs<strong>)</strong></font></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 60px\">\r\n\t\t\t\t<ol>\r\n\t\t\t\t\t<li align=\"center\">\r\n\t\t\t\t\t\t<font size=\"+0\">&nbsp; </font></li>\r\n\t\t\t\t</ol>\r\n\t\t\t</td>\r\n\t\t\t<td style=\"width: 78px\">\r\n\t\t\t\t<font size=\"+0\">Jun</font></td>\r\n\t\t\t<td style=\"width: 192px\">\r\n\t\t\t\t<font size=\"+0\">21&nbsp;&nbsp;&nbsp;&nbsp; L1</font></td>\r\n\t\t\t<td style=\"width: 180px\">\r\n\t\t\t\t<font size=\"+0\">21&nbsp;&nbsp;&nbsp;&nbsp; L2</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">23 &nbsp;&nbsp;&nbsp; L3</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">23&nbsp;&nbsp;&nbsp;&nbsp; L4</font></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 60px\">\r\n\t\t\t\t<ol>\r\n\t\t\t\t\t<li align=\"center\">\r\n\t\t\t\t\t\t<font size=\"+0\">&nbsp; </font></li>\r\n\t\t\t\t</ol>\r\n\t\t\t</td>\r\n\t\t\t<td style=\"width: 78px\">\r\n\t\t\t\t<font size=\"+0\">&nbsp;</font></td>\r\n\t\t\t<td style=\"width: 192px\">\r\n\t\t\t\t<font size=\"+0\">28&nbsp;&nbsp;&nbsp;&nbsp; L5</font></td>\r\n\t\t\t<td style=\"width: 180px\">\r\n\t\t\t\t<font size=\"+0\">28&nbsp;&nbsp;&nbsp;&nbsp; L6</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">30&nbsp;&nbsp;&nbsp;&nbsp; T1</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">30&nbsp;&nbsp;&nbsp;&nbsp; T2</font></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 60px\">\r\n\t\t\t\t<ol>\r\n\t\t\t\t\t<li align=\"center\">\r\n\t\t\t\t\t\t<font size=\"+0\">&nbsp; </font></li>\r\n\t\t\t\t</ol>\r\n\t\t\t</td>\r\n\t\t\t<td style=\"width: 78px\">\r\n\t\t\t\t<font size=\"+0\">July</font></td>\r\n\t\t\t<td style=\"width: 192px\">\r\n\t\t\t\t<font size=\"+0\">05&nbsp;&nbsp;&nbsp;&nbsp; L7</font></td>\r\n\t\t\t<td style=\"width: 180px\">\r\n\t\t\t\t<font size=\"+0\">05&nbsp;&nbsp;&nbsp;&nbsp; L8</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">07&nbsp;&nbsp;&nbsp;&nbsp; L9</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">07&nbsp;&nbsp;&nbsp;&nbsp; L10</font></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 60px\">\r\n\t\t\t\t<ol>\r\n\t\t\t\t\t<li align=\"center\">\r\n\t\t\t\t\t\t<font size=\"+0\">&nbsp; </font></li>\r\n\t\t\t\t</ol>\r\n\t\t\t</td>\r\n\t\t\t<td style=\"width: 78px\">\r\n\t\t\t\t<font size=\"+0\">&nbsp;</font></td>\r\n\t\t\t<td style=\"width: 192px\">\r\n\t\t\t\t<font size=\"+0\">12&nbsp;&nbsp;&nbsp;&nbsp; T3</font></td>\r\n\t\t\t<td style=\"width: 180px\">\r\n\t\t\t\t<font size=\"+0\">12&nbsp;&nbsp;&nbsp;&nbsp; T4</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">14&nbsp;&nbsp;&nbsp;&nbsp; L11</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">14&nbsp;&nbsp;&nbsp;&nbsp; L12</font></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 60px\">\r\n\t\t\t\t<ol>\r\n\t\t\t\t\t<li align=\"center\">\r\n\t\t\t\t\t\t<font size=\"+0\">&nbsp; </font></li>\r\n\t\t\t\t</ol>\r\n\t\t\t</td>\r\n\t\t\t<td style=\"width: 78px\">\r\n\t\t\t\t<font size=\"+0\">&nbsp;</font></td>\r\n\t\t\t<td style=\"width: 192px\">\r\n\t\t\t\t<font size=\"+0\">19&nbsp;&nbsp;&nbsp;&nbsp; L13</font></td>\r\n\t\t\t<td style=\"width: 180px\">\r\n\t\t\t\t<font size=\"+0\">19 &nbsp;&nbsp;&nbsp; L14</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">21&nbsp;&nbsp;&nbsp;&nbsp; T5</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">21&nbsp;&nbsp;&nbsp;&nbsp; T6</font></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 60px\">\r\n\t\t\t\t<ol>\r\n\t\t\t\t\t<li align=\"center\">\r\n\t\t\t\t\t\t<font size=\"+0\">&nbsp; </font></li>\r\n\t\t\t\t</ol>\r\n\t\t\t</td>\r\n\t\t\t<td style=\"width: 78px\">\r\n\t\t\t\t<font size=\"+0\">&nbsp;</font></td>\r\n\t\t\t<td style=\"width: 192px\">\r\n\t\t\t\t<font size=\"+0\">26&nbsp;&nbsp;&nbsp;&nbsp; T7</font></td>\r\n\t\t\t<td style=\"width: 180px\">\r\n\t\t\t\t<font size=\"+0\">26&nbsp;&nbsp;&nbsp;&nbsp; T8</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">28</font></td>\r\n\t\t\t<td style=\"width: 204px\">\r\n\t\t\t\t<font size=\"+0\">28</font></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 60px\">\r\n\t\t\t\t<font size=\"+0\">&nbsp;</font></td>\r\n\t\t\t<td colspan=\"5\" style=\"width: 858px\">\r\n\t\t\t\t<font size=\"+0\"><strong>Special Term : Mon,&nbsp;18 Jun&nbsp; to&nbsp; Sat,&nbsp;28 Jul 2012</strong></font></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 60px\">\r\n\t\t\t\t<font size=\"+0\">&nbsp;</font></td>\r\n\t\t\t<td colspan=\"5\" style=\"width: 858px\">\r\n\t\t\t\t<font size=\"+0\"><strong>EXAMINATION : Fri 27 Jul 2012 (2:30 pm)</strong></font></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n<font size=\"+0\">&nbsp;</font>",
+					"Order": 4
+				},
+				{
+					"ID": "6e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Syllabus",
+					"Description": "<blockquote dir=\"ltr\">\n\t<strong>(1) Introduction (Lectures 1-5; Introduction to Biotechnology, Chapters 1, 2 )</strong><br />\n\t<br />\n\t<strong>&bull;</strong>&nbsp;The century of biotechnology<br />\n\t&bull;&nbsp;Landmark findings of modern biology<br />\n\t&bull;&nbsp;The nature of the genetic material and flow of genetic information<br />\n\t&bull;&nbsp;Differences between organisms in how the genetic material operates<br />\n\t&nbsp;<br />\n\t<strong>(2) Tools in Genetic Engineering (Lectures 6-8; Introduction to Biotechnology, Chapters 3, 8 ) </strong><br />\n\t&nbsp;<br />\n\t<strong>&bull;</strong>&nbsp;Cloning &amp; gene transfer<br />\n\t&bull;&nbsp;Southern hybridization &amp; PCR<br />\n\t&bull;&nbsp;DNA fingerprinting<br />\n\t&bull;&nbsp;DNA sequencing, genome research, and proteomics<br />\n\t&bull;&nbsp;Biocomputing and bioinfomatics<br />\n\t&nbsp;<br />\n\t<strong>(3) The genetic engineering of microorganisms, plants, animals and humans, and applications to society&nbsp; ( Lectures 9-12; Introduction to Biotechnology, Chapters 4-11 ) </strong><br />\n\t&nbsp;<br />\n\t<strong>&bull;</strong>&nbsp;Medical<br />\n\t&bull;&nbsp;Environmental<br />\n\t&bull;&nbsp;Agricultural<br />\n\t&bull;&nbsp;Pharmaceutical<br />\n\t&bull;&nbsp;Military<br />\n\t&bull;&nbsp;Legal and forensic<br />\n\t&nbsp;<br />\n\t<strong>(4) Moral and ethical concerns ( Lecture 13; Introduction to Biotechnology, Chapters 12-13 ) </strong><br />\n\t&nbsp;<br />\n\t<strong>&bull;</strong>&nbsp;The ethics of genetic engineering<br />\n\t&bull;&nbsp;The ethics of genetic predictions and animal cloning<br />\n\t&bull;&nbsp;Intellectual property rights and patenting</blockquote>\n",
+					"Order": 6
+				},
+				{
+					"ID": "8e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Assessment",
+					"Description": "<span id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl5_lblCourseInfo\"><strong><u>Nature </u></strong></span><strong><u>of CA and final assessment</u>: </strong><br />\nThe final grade will be based on an examination (60%) and CA (40%).<br />\n<span id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl5_lblCourseInfo\">Final Examination: 60 multiple choice questions.</span><br />\n<span id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl5_lblCourseInfo\">Continual Assessment: This will include several formats from participation of online quizzes/survey, short structured questions, essay writing, problems-related to reading assignments, problems-related to web-based learning, special-assigned problems, etc. While the CA will involve some of these formats, it is however not limited to those listed here. The module coordinator and lecturers involved will decide on the type, format and weightage of the assessments.</span><br />\n<span id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl5_lblCourseInfo\">Specific instructions and deadlines for each tasks and assignments will be given in advance during the lectures.</span><br />\n&nbsp;<br />\n<span id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl5_lblCourseInfo\">The module will involve web-based learning, online participation/interaction and some form of assessments will require broadband internet access, and students are advised to make their own arrangement for the necessary internet access. The Department of Biological Sciences will provide selected time-slots in the teaching lab&nbsp; ( Refer to IVLE home page) to facilitate students&#39; learning, however, due to the limited/restricted time-slot, students will likely require their own internet access.</span>",
+					"Order": 8
+				}
+			],
+			"ReadingFormatted": [],
+			"ReadingUnformatted": [
+				{
+					"ID": "00000000-0000-0000-0000-000000000000",
+					"AdditionalInfo": "<p>\n\t<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_UnFormat_ctrl0_lblUnFormat\"><font color=\"#000000\">Compulsory reading:</font></span></p>\n<p>\n\t<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_UnFormat_ctrl0_lblUnFormat\"><font color=\"#000000\">Introduction to BIOTECHNOLOGY, William J. Thieman and Michael A. Palladino (either 1st or 2nd edition)</font></span></p>\n<p>\n\t<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_UnFormat_ctrl0_lblUnFormat\"><font color=\"#000000\">Supplementary reading (bibliography)</font></span></p>\n<p>\n\t<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_UnFormat_ctrl0_lblUnFormat\"><font color=\"#000000\">Weblinks, CD ROMs and other references as listed above.</font></span></p>\n"
+				}
+			]
+		},
+		{
+			"Announcements": [
+				{
+					"ID": "2ea9d808-59d1-4af2-8408-4c01e3b9eee4",
+					"Title": "Trial Data",
+					"Description": "Four trial modules contain the following tools will be created by default.<br />\r\n&nbsp;<br />\r\n-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Announcement<br />\r\n-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Forum<br />\r\n-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Workbin<br />\r\n&nbsp;<br />\r\nPlease let us know if you need additional information or tools.",
+					"Url": "",
+					"ExpiryDate": "/Date(1347958920000+0800)/",
+					"ExpiryDate_js": "2012-09-18T17:02:00",
+					"CreatedDate": "/Date(1337590920000+0800)/",
+					"CreatedDate_js": "2012-05-21T17:02:00",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"isRead": false
+				}
+			],
+			"Forums": [
+				{
+					"ID": "6dc48fa5-5a1a-4a0d-8016-196733e701b0",
+					"Title": "iCreate Mobility Challenge Trial Data (4)",
+					"ExpiryDate": "/Date(1346428740000+0800)/",
+					"ExpiryDate_js": "2012-08-31T23:59:00",
+					"WelcomeMessage": null,
+					"BadgeTool": 0,
+					"Headings": [],
+					"hasItems": false,
+					"SortingOrder": 0
+				}
+			],
+			"Workbins": [
+				{
+					"ID": "3122bf28-60c1-4f8f-a446-44e372c2299c",
+					"Title": "iCreate Mobility Challenge Trial Data (4)",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": null,
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Published": true,
+					"BadgeTool": 2,
+					"Folders": []
+				}
+			],
+			"Webcasts": [],
+			"Gradebooks": [],
+			"Polls": [],
+			"ID": "6c1ab388-d563-4b82-8962-6aca1d2fc168",
+			"CourseLevel": "1",
+			"CourseCode": "iCMC/2BMetro/4",
+			"CourseName": "iCreate Mobility Challenge Trial Data (4)",
+			"CourseDepartment": "",
+			"CourseSemester": "Semester 3",
+			"CourseAcadYear": "2011/2012",
+			"CourseOpenDate": "/Date(1337529600000+0800)/",
+			"CourseOpenDate_js": "2012-05-21T00:00:00",
+			"CourseCloseDate": "/Date(1346428740000+0800)/",
+			"CourseCloseDate_js": "2012-08-31T23:59:00",
+			"CourseMC": "0",
+			"isActive": "Y",
+			"Permission": "S",
+			"Creator": {
+				"UserID": "citivle",
+				"Name": "Ivle Web Master",
+				"Email": null,
+				"Title": null,
+				"UserGuid": "00000000-0000-0000-0000-000000000001",
+				"AccountType": null
+			},
+			"hasGradebookItems": false,
+			"hasTimetableItems": false,
+			"hasGroupsItems": false,
+			"hasClassGroupsForSignUp": false,
+			"hasGuestRosterItems": false,
+			"hasClassRosterItems": false,
+			"hasWeblinkItems": false,
+			"hasLecturerItems": false,
+			"hasDescriptionItems": false,
+			"hasReadingItems": false,
+			"hasAnnouncementItems": false,
+			"hasProjectGroupItems": false,
+			"hasProjectGroupsForSignUp": false,
+			"hasConsultationItems": false,
+			"hasConsultationSlotsForSignUp": false,
+			"Badge": 3,
+			"BadgeAnnouncement": 1,
+			"WebLinks": [
+				{
+					"ID": "b3391653-1a9f-4141-9f39-b29c6c25ba8e",
+					"URL": "http://cit.nus.edu.sg",
+					"Description": "CIT",
+					"Order": 1,
+					"Rating": 4,
+					"SiteType": ""
+				}
+			],
+			"Lecturers": [
+				{
+					"ID": "95679c21-c79a-4da1-bc26-2d8d75223f18",
+					"User": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": "MS",
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Role": "Lecturer                                                                                            ",
+					"Order": 1,
+					"ConsultHrs": null
+				}
+			],
+			"Descriptions": [
+				{
+					"ID": "1e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Aims & Objectives",
+					"Description": "<font>Learn the basics of creating and&nbsp;managing a course in&nbsp;IVLE, NUS&#39;s&nbsp;Learning or Course Management System. Participants will get an overview of&nbsp;the layout and navigation, have an opportunity to place materials in a sample course.<br />\n<br />\n<strong><u>Owned by:</u></strong></font><br />\n<p>\n\tThe Centre for Instructional Technology was formed in 1999 to drive the use of technology in teaching and learning at NUS. Technology is an integral part of our lives, and it is increasingly being used to enable new possibilities in education.</p>\n<p>\n\tTo that end, CIT offers a smorgasboard of educational technology services. These include staples such as the Integrated Virtual Learning Environment (IVLE) and webcasts. We develop custom courseware to fulfil individual faculty staff&#39;s teaching needs. Backing this up is our multimedia team which provides a full range of audio-visual production services.</p>\n<p>\n\tCIT facilitates audio, video and web conferencing, from high-definition TelePresence to computer-based online classes. We have also kept up with the social media boom, providing blogs, wikis, online mindmaps and customisable start pages for the NUS community.</p>\n<p>\n\tFaculty staff can take advantage of our self-service offerings too. Various tools are available which allow faculty staff to create online lectures, check for plagiarism and create an interactive and engaging classroom.</p>\n<p>\n\tBesides services, CIT promotes the use of technology in teaching through roadshows, training and annual seminar - BuzzEd. We also spearhead eLearning Week every semester, in conjunction with Computer Centre, so that NUS is ready for any eventuality.</p>\n<p>\n\tCIT is here for all your educational technology needs. We hope to add positively to the learning experience in NUS.</p>\n",
+					"Order": 1
+				},
+				{
+					"ID": "2e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Prerequisites",
+					"Description": "<table width=\"100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl1_lblCourseInfo\"><font color=\"#000000\">This workshop gives a basic introduction to IVLE and is ideal for new staff who have little or no knowledge of IVLE. </font></span></li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl1_lblCourseInfo\"><font color=\"#000000\">Basic computer skills and basic Web navigation skills would be useful </font></span></li>\n\t\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n",
+					"Order": 2
+				},
+				{
+					"ID": "4e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Schedule",
+					"Description": "<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl2_lblCourseInfo\"><font color=\"#000000\">Weekly discussions</font></span>",
+					"Order": 4
+				},
+				{
+					"ID": "5e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Synopsis",
+					"Description": "<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl3_lblCourseInfo\"><font color=\"#000000\">IVLE (Integrated Virtual Learning Environment) is a learning management system designed to facilitate and supplement teaching and thereby, promote student learning at NUS. A comprehensive introduction to IVLE, this hands-on workshop will enable you to create and manage a module with emphasis on the commonly used tools like the Lesson Plan and the workbin. It will also help participants have a brief overview of the tools that are available in IVLE.</font></span>",
+					"Order": 5
+				},
+				{
+					"ID": "8e5f053b-8835-4692-be49-41f07234cfff",
+					"Title": "Assessment",
+					"Description": "<table width=\"100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl4_lblCourseInfo\"><font color=\"#000000\">Assessment will be based on the participation in the chats, forums and polls.&nbsp; </font></span></li>\n\t\t\t\t\t<li>\n\t\t\t\t\t\t<span class=\"labelCtrl\" id=\"ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolder1_LV_CourseInfo_ctrl4_lblCourseInfo\"><font color=\"#000000\">A&nbsp;one page summary report of what you gained by this course. </font></span></li>\n\t\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n",
+					"Order": 8
+				},
+				{
+					"ID": "e95be570-d2bf-41ce-a953-352afec590d0",
+					"Title": "Background",
+					"Description": "<h3>\n\t<a href=\"https://community.nus.edu.sg/ivle/?p=527\" rel=\"bookmark\"><font color=\"#9d0000\">IVLE Background</font></a></h3>\n<div class=\"storycontent\">\n\t<p>\n\t\tIVLE is NUS&rsquo; own homegrown course management system. Many do not know that IVLE was launched in 1998 and we were the 1st University here (maybe in Asia) to identify the need for a web-database system as a support tool for teaching and learning. In 1998, web-database systems to support teaching and learning were primitive, so we decided to develop a system ourselves. Our main focus was <b>integration</b>, i.e. integration to NUS&rsquo; back-end systems and single sign-on (yes, even back then we were already thinking about it). So everything you see on IVLE is written in-house.</p>\n\t<p>\n\t\tSo what are the pros and cons with our approach:-</p>\n\t<p>\n\t\t<b>Pros:</b>- with source code, we have a greater degree of integration and personal customisation with NUS back-end systems, more flexibility in meeting our lecturer&rsquo;s needs, not beholder to vendor and their maintenance contracts, we know exactly what works and what does not, feeling of pride that NUS can write and maintain such a system to support 30,000 students. (b.t.w we only have 1+4 staff manning the user support and writing programs for IVLE)</p>\n\t<p>\n\t\t<b>Cons:</b>- development never stops!</p>\n</div>\n",
+					"Order": 9
+				},
+				{
+					"ID": "eeec7760-e58e-4c80-9976-2594398a68e6",
+					"Title": "Community",
+					"Description": "<h3>\n\t<a href=\"https://community.nus.edu.sg/ivle/?p=579\" rel=\"bookmark\"><font color=\"#9d0000\">IVLE Communities = Social Networks?</font></a></h3>\n<div class=\"storycontent\">\n\t<p>\n\t\tLong before the word &lsquo;social networks&rsquo; became popular, we saw the need within IVLE to have a space for students (among themselves) to communicate, collaborate, discuss and exchange files. IVLE Communities was launched in 2004. As of 9th Feb 2011, <b>IVLE has 7,421 communities</b>, with over 3,000 communities created just for project discussion. Out of the 7,000 communities, 211 are open communities, i.e. anyone can join and 7,210 are close communities. <font color=\"#9a5327\">What else do you want to see on IVLE Communities?</font></p>\n</div>\n",
+					"Order": 10
+				}
+			],
+			"ReadingFormatted": [
+				{
+					"ID": "7cf28ef4-7017-4034-8343-bd2f9bb6f61a",
+					"Title": "JavaScript : the definitive guide",
+					"Author": "Flanagan, David",
+					"Edition": "3",
+					"PubYear": "1998",
+					"ISBN": "1565923928",
+					"Publisher": "O'Reilly",
+					"BookType": "Compulsory",
+					"AdditionalInfo": "JavaScript: The Definitive Guide provides a thorough description of the core JavaScript language and its client-side framework, complete with sophisticated examples that show you how to handle common tasks like validating form data, working with cookies, and creating cross-browser dynamic content. The book also contains an in-depth reference section that covers every core and client-side JavaScript function, object, method, property, constructor, and event handler. HTML authors can use this book to learn how to build dynamic web pages with JavaScript. Experienced programmers can quickly find the information they need to start writing JavaScript programs. This book is an indispensable reference for all JavaScript programmers, regardless of experience level.",
+					"CompWebsite": "",
+					"Order": 1
+				}
+			],
+			"ReadingUnformatted": []
+		},
+		{
+			"Announcements": [],
+			"Forums": [
+				{
+					"ID": "63558881-b29e-44da-9c58-2d869a7b2dc7",
+					"Title": "iCreate Mobility Challenge 2012",
+					"ExpiryDate": "/Date(1346428740000+0800)/",
+					"ExpiryDate_js": "2012-08-31T23:59:00",
+					"WelcomeMessage": null,
+					"BadgeTool": 15,
+					"Headings": [],
+					"hasItems": true,
+					"SortingOrder": 0
+				}
+			],
+			"Workbins": [
+				{
+					"ID": "de749688-c9b4-4589-82ea-5378a4d53563",
+					"Title": "iCreate Mobility Challenge 2012 - Submissions of Program Codes",
+					"Creator": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": null,
+						"Title": null,
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Published": true,
+					"BadgeTool": 0,
+					"Folders": []
+				}
+			],
+			"Webcasts": [],
+			"Gradebooks": [],
+			"Polls": [],
+			"ID": "56d5a448-9129-4b63-b838-17783eab8bff",
+			"CourseLevel": "1",
+			"CourseCode": "iCMC2012",
+			"CourseName": "iCreate Mobility Challenge 2012",
+			"CourseDepartment": "",
+			"CourseSemester": "Semester 2",
+			"CourseAcadYear": "2011/2012",
+			"CourseOpenDate": "/Date(1327939200000+0800)/",
+			"CourseOpenDate_js": "2012-01-31T00:00:00",
+			"CourseCloseDate": "/Date(1346428740000+0800)/",
+			"CourseCloseDate_js": "2012-08-31T23:59:00",
+			"CourseMC": "0",
+			"isActive": "Y",
+			"Permission": "S",
+			"Creator": {
+				"UserID": "citivle",
+				"Name": "Ivle Web Master",
+				"Email": null,
+				"Title": null,
+				"UserGuid": "00000000-0000-0000-0000-000000000001",
+				"AccountType": null
+			},
+			"hasGradebookItems": false,
+			"hasTimetableItems": false,
+			"hasGroupsItems": false,
+			"hasClassGroupsForSignUp": false,
+			"hasGuestRosterItems": false,
+			"hasClassRosterItems": false,
+			"hasWeblinkItems": false,
+			"hasLecturerItems": false,
+			"hasDescriptionItems": false,
+			"hasReadingItems": false,
+			"hasAnnouncementItems": false,
+			"hasProjectGroupItems": false,
+			"hasProjectGroupsForSignUp": false,
+			"hasConsultationItems": false,
+			"hasConsultationSlotsForSignUp": false,
+			"Badge": 19,
+			"BadgeAnnouncement": 0,
+			"WebLinks": [],
+			"Lecturers": [
+				{
+					"ID": "7b5f80a5-dbac-41d3-85f1-fbb162c05f99",
+					"User": {
+						"UserID": "citivle",
+						"Name": "Ivle Web Master",
+						"Email": "citivle@nus.edu.sg",
+						"Title": "MS",
+						"UserGuid": "00000000-0000-0000-0000-000000000001",
+						"AccountType": null
+					},
+					"Role": "Lecturer                                                                                            ",
+					"Order": 1,
+					"ConsultHrs": null
+				}
+			],
+			"Descriptions": [],
+			"ReadingFormatted": [],
+			"ReadingUnformatted": []
+		}
+	],
+	"Comments": "Valid login!",
+	"LastUpdate": "/Date(1339754636641+0800)/",
+	"LastUpdate_js": "2012-06-15T18:03:56.6418443+08:00"
+}

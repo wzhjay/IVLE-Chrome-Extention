@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+	
+	<!--	css   -->
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="/app/css/todo.css">
+	
+	<!--	js    -->
+	<script src="/app/lib/json2.js"></script>
+	<script src="/app/lib/jquery.min.js"></script>
+	<script src="/app/lib/underscore-1.3.3.js"></script>
+	<script src="/app/lib/backbone.js"></script>
+	<script src="/app/lib/backbone-localstorage.js"></script>
+	<script src="/app/js/todos.js"></script>
+	<script src="/bootstrap/js/bootstrap.js"></script>
+
+	
+
+<title>IVLE</title>
+	<style type="text/css">
+	  p { color:white }
+	  
+	  .btn-menu { font-size: 20px }
+	  
+	  body {
+		width:560px;
+		height:300px;
+		background-color:#333333;
+		font-family: Segoe WP
+	  }
+	  
+	  .item1-grid, .item2-grid {
+		width: 150px;
+		height: 120px;
+		background-color: #999999;
+		border: silver
+	  }
+	  
+	  .navbar-inner {
+		background-image: url('/app/img/IVLEbanner1.jpg')
+	  }
+	  
+	  .wel-text {
+		margin: 0 0 0 -5px;
+		display: block;
+		float: left;
+		padding-left: 40px;
+		margin-top: 9px;
+		font-size: 15px;
+		color: white
+	  }
+	</style>
+	
+  </head>
+  <body data-spy="scroll" data-target=".subnav" data-offset="50" data-twttr-rendered="true">
+	<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+		  <div>
+          <a class="brand" href="#" data-toggle="collapse" data-target=".nav-collapse"><p class="btn-menu">IVLE</p></a>
+			<div class="wel-text">Hey! <a class="username">Loading...</a> | <a class="log-info">Logout</a> 
+		  </div>
+		  </div>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="#"><p>My Organizer</p></a>
+              </li>
+              <li class="">
+                <a href="#"><p>Modules</p></a>
+              </li>
+              <li class="">
+                <a data-toggle="#myCarousel" data-target=".carousel-inner" href="#todo"><p>Todos</p></a>
+              </li>
+            </ul>
+          </div>		  
+        </div>		
+      </div>
+    </div>
+	
+	<div class="container" style="height:295px; width: 560; overflow-y:auto;">
+		  <div id="myCarousel" class="carousel slide" style="height:260px; width: 560">
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+			  
+<!-- first slide, module grids-->
+			  
+			  <div class=" active item">
+				<ul class="thumbnails">
+				  <li class="item1-grid">
+					<div><p>Module1</p></div>
+				  </li>
+				  <li class="item1-grid">
+					<div><p>Module2</p></div>
+				  </li>
+				  <li class="item1-grid">
+					<div><p>Module3</p></div>
+				  </li>
+				</ul>
+			  </div>
+
+<!-- second slide -->
+
+			  <div class="item">
+				<div class="modules-info">
+				  <div class="modules-area">
+<!--				  <ul class="thumbnails">
+					<li class="item2-grid">
+					  <div><p>Module1</p></div>
+					</li>
+					<li class="item2-grid">
+					  <div><p>Module2</p></div>
+					</li>
+					<li class="item2-grid">
+					  <div><p>Module3</p></div>
+					</li>
+				  </ul>-->
+				  </div>
+				  <div class="info-area">
+				  </div>
+				</div>
+			  </div>
+
+<!-- thrid slide -->
+
+			  <div class="item">
+				<div id="todo">
+				  <header>
+					<h2>Todos</h2>
+					<input id="new-todo" type="text" placeholder="What needs to be done?">
+				  </header>
+
+				  <section id="main">
+					<label class="checkbox">
+					  <input id="toggle-all" type="checkbox">Mark all as complete
+					</label>
+					<ul id="todo-list"></ul>
+				  </section>
+
+				  <footer>
+					<a id="clear-completed">Clear completed</a>
+					<div id="todo-count"></div>
+				  </footer>
+				</div>
+				<div id="instructions">
+				  Double-click to edit a todo.
+				</div>
+			  </div>
+
+			</div>
+
+			
+			
+			
+			
+			
+<!-- Carousel nav -->
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		  </div>
+	</div>
+	
+	
+<!--	script of template for Todos    -->
+	<script type="text/template" id="item-template">
+    <div class="view">
+      <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+      <label><%= title %></label>
+      <a class="destroy"></a>
+    </div>
+    <input class="edit" type="text" value="<%= title %>" />
+  </script>
+
+  <script type="text/template" id="stats-template">
+    <% if (done) { %>
+      <a id="clear-completed">Clear <%= done %> completed <%= done == 1 ? 'item' : 'items' %></a>
+    <% } %>
+    <div class="todo-count"><b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
+  </script>
+  </body>
+</html>

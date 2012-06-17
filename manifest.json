@@ -1,0 +1,23 @@
+{
+  "name": "NUS IVLE",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "National University of Singapore Integrated Virtual Learning Environment Chrome extension",
+  "browser_action": {
+    "default_icon": "/app/img/Lion.ico",
+	"default_title": "NUS IVLE"
+	//"default_popup": "/app/html/popup.html"
+  },
+  "permissions": [
+	"storage",
+	"tabs",
+	"http://*/*"
+  ],
+  "background": {
+	"page": "background.html"
+  }
+  
+//  "icons": {
+//	"48": "Lion.ico"
+//  }
+}
