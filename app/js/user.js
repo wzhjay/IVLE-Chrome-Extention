@@ -16,7 +16,7 @@
 	},
 	
 	// set the localStorage for user
-	localStorage : new Store("users"),
+	userStorage : new Store("users"),
 	
 	
 	// initialization of user setting, get username, get user modules, set update interval and initial the todoList
@@ -32,18 +32,19 @@
 	  // initial and request for the APIs, save the date into local storage
 	  // get name object of JSON
 	  var nameURL = LAPI.request("UserName_Get");
-	  var nameObj = LAPI.getResponse(nameURL);
-	  this.localStoragecreate(nameObj);  // save the username json object into localStorage
+	  this.nameObj = LAPI.getResponse(nameURL);
+	  this.userStorage(this.nameObj);  // save the username json object into localStorage
 	  
 	  //get modules object of JSON
 	  var modulesURL = LAPI.requestURL("Modules", {Duration : 60, IncludeAllInfo : true});
-	  var modulesObj = LAPI.getResponse(modulesURL);
-	  this.localStorage.create(modulesObj);  // // save the module json object into localStorage
+	  this.modulesObj = LAPI.getResponse(modulesURL);
+	  this.userStorage.create(this.modulesObj);  // // save the module json object into localStorage
 	  
 	  // update the modules in user's nterval'
 	  var updateModules = function() {
 		var modulesURL = LAPI.requestURL("Modules", {Duration : this.interval, IncludeAllInfo : true});
-		var modulesObj = LAPI.getResponse(modulesURL);
+		this.modulesObj = LAPI.getResponse(modulesURL);
+		this.userStorage.update(this.modulesObj)
 	  }
 	  
 	  // set updateSID for user

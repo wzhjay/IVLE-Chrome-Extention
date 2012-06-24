@@ -73,8 +73,7 @@
   var Todos = new TodoList;
 
   //----------------------------------------------------------------------------
-  
-  
+  //
   // Todo item View
   
   // DOM elements
@@ -84,7 +83,7 @@
     tagName:  "li",
 
     // Cache the template function for a single item.
-    template: _.template($('#item-template').html()),
+    template: null,
 
     // The DOM events specific to an item.
     events: {
@@ -97,6 +96,12 @@
 	
 	// initialization and bind events
 	initialize: function() {
+	  
+	  
+	  console.log($('#item-template').html());
+	  
+	  this.template = _.template($('#item-template').html());
+	  
       this.model.bind('change', this.render, this);
       this.model.bind('destroy', this.remove, this);
     },
@@ -142,7 +147,6 @@
   });
 
   //----------------------------------------------------------------------------
-
   // Application
   var AppView = Backbone.View.extend({
 
@@ -150,7 +154,7 @@
 	el : $('#todo'),
 
 	// template for line of statistic atr the buttom
-	statsTemplate: _.template($('#stats-template').html()),
+	statsTemplate: null,
 
 	// events
 	events: {
@@ -163,9 +167,10 @@
 	// any loading preexisting todos saved in localStorage
 	initialize: function() {
 
+	  this.statsTemplate = _.template($('#stats-template').html());
       this.input = this.$("#new-todo");
       this.allCheckbox = this.$("#toggle-all")[0];
-
+	  
       Todos.bind('add', this.addOne, this);
       Todos.bind('reset', this.addAll, this);
       Todos.bind('all', this.render, this);
@@ -174,6 +179,7 @@
       this.main = $('#main');
 
       Todos.fetch();
+	  console.log(Todos);
     },
 
 
@@ -181,7 +187,7 @@
 	render: function() {
       var done = Todos.done().length;
       var remaining = Todos.remaining().length;
-
+	  console.log(1);
       if (Todos.length) {
         this.main.show();
         this.footer.show();
@@ -190,8 +196,8 @@
         this.main.hide();
         this.footer.hide();
       }
-
-      this.allCheckbox.checked = !remaining;
+	  
+//      this.allCheckbox.checked = !remaining;
     },
 
 
@@ -200,7 +206,7 @@
 		var view = new TodoView({model: todo});
 		this.$("#todo-list").append(view.render().el);
     },
-
+	  
 	  // add all items in the Todos collection at once
 	  addAll: function() {
 		Todos.each(this.addOne);
@@ -208,9 +214,9 @@
 
 	  // keypresee to create new todo model and save to localStorage
 	  createOnEnter: function(e) {
+		console.log(2);
 		if (e.keyCode != 13) return;
 		if (!this.input.val()) return;
-
 		Todos.create({title: this.input.val()});
 		this.input.val('');
     },
@@ -229,9 +235,14 @@
     }
 	
   });
-
-  // kick things off
+//  // kick things off
+//  var App = new AppView;
+  
+ $(document).ready(function() {
+   
+   // kick things off
   var App = new AppView;
+ });
   
 })();
 

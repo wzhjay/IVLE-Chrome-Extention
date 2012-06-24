@@ -25,6 +25,8 @@
 		  "LogState" : this.defaults.LogState
 		});
 	  }
+	  console.log("login model init");
+	  console.log(this);
 	},
 	
 	
@@ -74,19 +76,18 @@
 	}
 	
   });
-  
 	
   var myLogin = new Login; 
   //----------------------------------------------------------------------------
-
   // Login view
   var LoginView = Backbone.View.extend({
-	
 	//... is link tab
-	tagName : "a",
+//	tagName : "div",
+	el : $('#login-area'),
 	
+	model : myLogin,
 	//template for login
-	loginTemplate : _.template($('login-template').html()),
+	loginTemplate : null,
 	
 	// events for DOM elements
 	events: {
@@ -95,15 +96,19 @@
 	
 	// initialization
 	initialize: function() {
-	  this.model.bind('change', this.render, this);
-	  this.logArea = this.$('#login-area');
+	  console.log("log view init satrt");
+	  this.loginTemplate = _.template($('#login-template').html());
 	  
-	  this.$el.html(this.template(this.model.toJSON()));
+	  myLogin.bind('all', this.render, this);
+	  
+	  this.logArea = this.$('#login-area');
+	  this.$el.html(this.loginTemplate(this.model.toJSON()));
 	  return this;
 	},
 	
 	// re-render the login state
 	render: function() {
+	  console.log('render log view')
 	  this.logArea.show();
 	  this.logArea.html(this.loginTemplate({userName: myLogin.userName, logState : myLogin.logState}));
 	},
@@ -111,24 +116,36 @@
 	// toggle the login state
 	toggleLog: function() {
 	  if(!user.token){
-		//myLogin.userName = from API;
+		myLogin.userName = user.userStorage.find(user.nameObj).name;
 		myLogin.login();
 		myLogin.LogState = "Logout";
+		
+		// render the view of login
+		this.render();
 	  }
 	  else {
 		// do something to remove the user's info'
 		myLogin.logout();
 		myLogin.userName = myLogin.defaults.userName;
 		myLogin.logState = myLogin.defaults.logState;
+		
+		//destroy the user model in local storage
+		user.userStorage.destroy(user.nameObj);
+		user.userStorage.destroy(user.modulesObj);
+		// render the view of logout
+		this.render();
 		}
 	  }
-
-	  
 	  
 	  
 
   });
 
+// start the view
+$(document).ready(function() {
+  console.log('log view init');
+  var LogView = new LoginView;
+});
 
 
 

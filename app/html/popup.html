@@ -8,12 +8,16 @@
 	<link rel="stylesheet" type="text/css" href="/app/css/todo.css">
 	
 	<!--	js    -->
-	<script src="/app/lib/json2.js"></script>
 	<script src="/app/lib/jquery.min.js"></script>
+	<script src="/app/lib/json2.js"></script>
 	<script src="/app/lib/underscore-1.3.3.js"></script>
 	<script src="/app/lib/backbone.js"></script>
 	<script src="/app/lib/backbone-localstorage.js"></script>
+	<script src="/app/js/boostrap.js"></script>
 	<script src="/app/js/todos.js"></script>
+	<script src="/app/js/login.js"></script>
+	<script src="/app/js/user.js"></script>
+	<script src="/app/js/LAPI.js"></script>
 	<script src="/bootstrap/js/bootstrap.js"></script>
 
 	
@@ -60,7 +64,9 @@
         <div class="container">
 		  <div>
           <a class="brand" href="#" data-toggle="collapse" data-target=".nav-collapse"><p class="btn-menu">IVLE</p></a>
-			<div class="wel-text">Hey! <a class="username">Loading...</a> | <a class="log-info">Logout</a> 
+		  <div id="login-area">
+<!--			<div class="wel-text">Hey! <a class="username">Loading...</a> | <a class="log-info">Logout</a> 
+		  </div>-->
 		  </div>
 		  </div>
           <div class="nav-collapse collapse">
@@ -133,9 +139,8 @@
 				  </header>
 
 				  <section id="main">
-					<label class="checkbox">
-					  <input id="toggle-all" type="checkbox">Mark all as complete
-					</label>
+					<input id="toggle-all" type="checkbox">
+					  <label for="toggle-all">Mark all as complete</label>
 					<ul id="todo-list"></ul>
 				  </section>
 
@@ -179,5 +184,11 @@
     <% } %>
     <div class="todo-count"><b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
   </script>
+  
+  <!--  script of template for login  -->
+<script type="text/template" id="login-template">
+  <div class="wel-text">Hey! <a class="username"><%= userName %></a> | <a class="log-info"><%= logState%></a>
+  </div>
+</script>
   </body>
 </html>
