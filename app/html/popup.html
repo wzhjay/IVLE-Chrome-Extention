@@ -18,6 +18,7 @@
 	<script src="/app/js/login.js"></script>
 	<script src="/app/js/user.js"></script>
 	<script src="/app/js/LAPI.js"></script>
+	<script src="/app/js/modules.js"></script>
 	<script src="/bootstrap/js/bootstrap.js"></script>
 
 	
@@ -55,6 +56,11 @@
 		font-size: 15px;
 		color: white
 	  }
+	  
+	  #login-area {
+		font: 16px Segoe WP, Arial;
+		padding: 8px 0px 0px 80px;
+	  }
 	</style>
 	
   </head>
@@ -65,9 +71,8 @@
 		  <div>
           <a class="brand" href="#" data-toggle="collapse" data-target=".nav-collapse"><p class="btn-menu">IVLE</p></a>
 		  <div id="login-area">
-<!--			<div class="wel-text">Hey! <a class="username">Loading...</a> | <a class="log-info">Logout</a> 
-		  </div>-->
-		  </div>
+			<div class="wel-text">Hey! <a class="username">Dear Student</a> | <a class="log-info">Login</a>
+			</div>
 		  </div>
           <div class="nav-collapse collapse">
             <ul class="nav">
@@ -110,7 +115,7 @@
 <!-- second slide -->
 
 			  <div class="item">
-				<div class="modules-info">
+				<div id="modules-info">
 				  <div class="modules-area">
 <!--				  <ul class="thumbnails">
 					<li class="item2-grid">
@@ -185,10 +190,13 @@
     <div class="todo-count"><b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
   </script>
   
-  <!--  script of template for login  -->
-<script type="text/template" id="login-template">
-  <div class="wel-text">Hey! <a class="username"><%= userName %></a> | <a class="log-info"><%= logState%></a>
-  </div>
-</script>
+<!--         modules info        -->
+  <script type="text/template" id="module-template">
+    
+  </script>
+  
+  <script type="text/template" id="module-info-template">
+    
+  </script>
   </body>
 </html>

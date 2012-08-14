@@ -1,8 +1,7 @@
 // Todo
 
 (function(){
-  
-  
+  var App;
   // todo Model
   var Todo = Backbone.Model.extend({
 
@@ -17,6 +16,7 @@
 
     // Ensure that each todo created has `title`.
     initialize: function() {
+	  console.log('todo item init');
       if (!this.get("title")) {
         this.set({"title": this.defaults.title});
       }
@@ -71,7 +71,7 @@
   
   // create new todoList as global collection
   var Todos = new TodoList;
-
+  console.log(Todos);
   //----------------------------------------------------------------------------
   //
   // Todo item View
@@ -98,8 +98,7 @@
 	initialize: function() {
 	  
 	  
-	  console.log($('#item-template').html());
-	  
+	  console.log('initialize todo view');
 	  this.template = _.template($('#item-template').html());
 	  
       this.model.bind('change', this.render, this);
@@ -111,7 +110,7 @@
 	render: function() {
       this.$el.html(this.template(this.model.toJSON()));
       this.$el.toggleClass('done', this.model.get('done'));
-      this.input = this.$('.edit');
+      this.input = $('.edit');
       return this;
     },
 	
@@ -136,6 +135,7 @@
 	
 	// enter key press, done editing
 	updateOnEnter: function(e) {
+	  console.log(e);
       if (e.keyCode == 13) this.close();
     },
 	
@@ -158,28 +158,29 @@
 
 	// events
 	events: {
-      "keypress #new-todo":  "createOnEnter",
-      "click #clear-completed": "clearCompleted",
-      "click #toggle-all": "toggleAllComplete"
+//      "keypress #new-todo":  "createOnEnter",
+//      "click #clear-completed": "clearCompleted",
+//      "click #toggle-all": "toggleAllComplete"
     },
 
 	// initialization and bind the events to global 'Todos' list of collection
 	// any loading preexisting todos saved in localStorage
 	initialize: function() {
-
+	  console.log('initialize todolist view');
+//	  return;
 	  this.statsTemplate = _.template($('#stats-template').html());
-      this.input = this.$("#new-todo");
-      this.allCheckbox = this.$("#toggle-all")[0];
+	  console.log(this.statsTemplate);
+      this.input = $("#new-todo");
+      this.allCheckbox = $("#toggle-all")[0];
 	  
       Todos.bind('add', this.addOne, this);
       Todos.bind('reset', this.addAll, this);
       Todos.bind('all', this.render, this);
 
-      this.footer = this.$('footer');
+      this.footer = $('footer');
       this.main = $('#main');
 
       Todos.fetch();
-	  console.log(Todos);
     },
 
 
@@ -187,7 +188,8 @@
 	render: function() {
       var done = Todos.done().length;
       var remaining = Todos.remaining().length;
-	  console.log(1);
+	  console.log('start rendering');
+	  console.log(Todos.length + ' items');
       if (Todos.length) {
         this.main.show();
         this.footer.show();
@@ -196,15 +198,16 @@
         this.main.hide();
         this.footer.hide();
       }
-	  
-//      this.allCheckbox.checked = !remaining;
+      this.allCheckbox.checked = !remaining;
+	  console.log('finish rendering');
     },
 
 
 	  // add one items to the list
 	  addOne: function(todo) {
 		var view = new TodoView({model: todo});
-		this.$("#todo-list").append(view.render().el);
+		$("#todo-list").append(view.render().el);
+		console.log('one item added');
     },
 	  
 	  // add all items in the Todos collection at once
@@ -213,25 +216,29 @@
 	  },
 
 	  // keypresee to create new todo model and save to localStorage
-	  createOnEnter: function(e) {
-		console.log(2);
-		if (e.keyCode != 13) return;
-		if (!this.input.val()) return;
-		Todos.create({title: this.input.val()});
-		this.input.val('');
-    },
+//	  createOnEnter: function() {
+//		console.log(e);
+//		if (e.keyCode != 13) return;
+//		if (!App.input.val()) return;
+//
+//		Todos.create({title: this.input.val()});
+//		this.input.val('');
+//	   },
 
 
 	  // clear all done items, destroy models
 	  clearCompleted: function() {
+		console.log('clear completed');
 		_.each(Todos.done(), function(todo){ todo.clear(); });
 		return false;
     },
 
 
 	  toggleAllComplete: function () {
+		console.log('toggle all as completed');
 		var done = this.allCheckbox.checked;
 		Todos.each(function (todo) { todo.save({'done': done}); });
+		console.log(Todos);
     }
 	
   });
@@ -241,7 +248,33 @@
  $(document).ready(function() {
    
    // kick things off
-  var App = new AppView;
+  App = new AppView;
+  
+  function simulateKeyPress(character) {
+	jQuery.event.trigger({ type : 'keypress', which : character.charCodeAt(0) });
+  }
+  $(function() {
+	$('body').keypress(function(e) {
+		console.log('key has pressed!');
+		if (e.which != 13) return;
+//		if($('.editing input').val()) App.view.close();
+		if (!App.input.val()) return;
+		
+		Todos.create({title: App.input.val()});
+		App.input.val('');
+//		this.input.val('');
+	  });
+	simulateKeyPress("e");
+  });
+  
+  $('#clear-completed').click(function() {
+	App.clearCompleted();
+  });
+  
+  $('#toggle-all').click(function() {
+	App.toggleAllComplete();
+  });
+  
  });
   
 })();

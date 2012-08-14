@@ -1,7 +1,7 @@
 {
   "name": "NUS IVLE",
-  "version": "1.0",
-  "manifest_version": 1,
+  "version": "1",
+//  "manifest_version": 2,
   "description": "National University of Singapore Integrated Virtual Learning Environment Chrome extension",
   "browser_action": {
     "default_icon": "/app/img/Lion.ico",
@@ -9,15 +9,23 @@
 	//"default_popup": "/app/html/popup.html"
   },
   "permissions": [
-	"storage",
+	//"storage",
 	"tabs",
-	"http://*/*"
+	"http://www.nus.edu.sg/*"
   ],
   "background": {
 	"page": "background.html"
   },
   
-  "content_security_policy": "unsafe-eval"
+  "content_scripts": [
+    {
+	  "matches": ["http://www.nus.edu.sg/*"],
+      "js": ["app/lib/jquery.min.js", "app/js/getToken.js"],
+	  "run_at": "document_start"
+    }
+  ]
+  
+//  "content_security_policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval'"
 //  "icons": {
 //	"48": "Lion.ico"
 //  }

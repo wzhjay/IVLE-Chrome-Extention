@@ -24,3 +24,110 @@
   position: relative;
   border-bottom: 1px solid #cccccc;
 }
+
+#todo-list li.done label {
+	color: #777777;
+	text-decoration: line-through;
+}
+
+#todo-list li:last-child {
+	border-bottom: none;
+}
+
+#clear-completed {
+	float: right;
+	line-height: 20px;
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.1);
+	color: white;
+	font-size: 11px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 0 10px 1px;
+	cursor: pointer;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	border-radius: 12px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+}
+
+#clear-completed:active {
+	position: relative;
+	top: 1px;
+}
+
+
+#todo-list li .edit {
+	display: none;
+}
+
+#todo-list li.editing {
+	border-bottom: none;
+	margin-top: -1px;
+	padding: 0;
+}
+
+#todo-list li.editing:last-child {
+	margin-bottom: -1px;
+}
+
+#todo-list li.editing .edit {
+	display: block;
+	width: 444px;
+	padding: 13px 15px 14px 20px;
+	margin: 0;
+}
+
+#todo-list li.editing .view {
+	display: none;
+}
+#todo-list li {
+	padding: 5px 0px 0px 0;
+	position: relative;
+	font-size: 15px;
+	border-bottom: 1px solid #cccccc;
+}
+
+#todo label {
+  display: inline;
+  color: white;
+}
+
+#todoapp input[type="text"] {
+	width: 466px;
+	font-size: 24px;
+	font-family: inherit;
+	line-height: 1.4em;
+	border: 0;
+	outline: none;
+	padding: 6px;
+	border: 1px solid #999999;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}
+
+
+#todo input[type="text"] {
+	width: 230px;
+	font-size: 15px;
+	font-family: inherit;
+	line-height: 2em;
+	border: 0;
+	outline: none;
+	padding: 5px;
+	border: 1px solid #999999;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}

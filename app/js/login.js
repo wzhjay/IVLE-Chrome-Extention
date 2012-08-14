@@ -1,56 +1,49 @@
 // Login
-
 (function() {
+  var user = nusivle.user;
+  var myLogin;
   
-  var user = nusivle.User;
-  var LAPI = nusivle.LAPI;
   
-  // Login model
-  var Login = Backbone.Model.extend({
+  
+  function Login() {
 	
-	// Default valuse
-	defaults: function() {
-	  return {
-		userName : "Dear Student",
-		logState : "Login",
-		isLogged	 : false
-	  };
-	},
+	this.userNmae = "Dear Student";
+	this.logState = "Login";
+	this.isLogged = false;
 	
-	// initialization and set defaults attrs if no user Login
-	initialize : function() {
-	  if(!this.isLogged) {
-		this.set({
-		  "userName" : this.defaults.userName,
-		  "LogState" : this.defaults.LogState
-		});
-	  }
-	  console.log("login model init");
-	  console.log(this);
-	},
-	
+	console.log('log view init');
+  }
+  
+  
+  
+  Login.prototype = {
 	
 	// login and get save the token
 	login: function() {
-	  window.open(LAPI.getTokenURL);
+	  if(!user.initialed){
+		var token;
+		user.getToken(token);
+		console.log(token);
+		user.saveToken(token);
+		user.validated = true;
 
-	  if(!user.initialed) {
 		user.initialUser();
 	  }
-
-	  var token;
-	  user.getToken(token);
-	  user.saveToken(token);
-	  user.validated = true;
+	  this.isLogged = true;
+	  console.log("login done");
+	
 	},
-
+	
+	
 	// logout
 	logout: function() {
-
+	  console.log("logouted");
 	},
-
+	
+	
 	// validate user login
 	validateLogin: function() {
+	  console.log("start validate login");
 	  if(!user.token) {
 		user.validated = false;
 		return;
@@ -58,9 +51,9 @@
 		return;
 	  }
 
-	  var url = LAPI.requestURL("Validate");
+	  var url = user.LAPI.requestURL("Validate");
 
-	  var valObj = LAPI.getResponse(url); // get the JSOn object
+	  var valObj = user.LAPI.getResponse(url); // get the JSOn object
 
 	  if(valObj.Success) {
 		user.validated = true;
@@ -73,61 +66,22 @@
 		  initilalUser();
 		}
 	  }
-	}
-	
-  });
-	
-  var myLogin = new Login; 
-  //----------------------------------------------------------------------------
-  // Login view
-  var LoginView = Backbone.View.extend({
-	//... is link tab
-//	tagName : "div",
-	el : $('#login-area'),
-	
-	model : myLogin,
-	//template for login
-	loginTemplate : null,
-	
-	// events for DOM elements
-	events: {
-	  "click .log-info" : "toggleLog"
-	},
-	
-	// initialization
-	initialize: function() {
-	  console.log("log view init satrt");
-	  this.loginTemplate = _.template($('#login-template').html());
-	  
-	  myLogin.bind('all', this.render, this);
-	  
-	  this.logArea = this.$('#login-area');
-	  this.$el.html(this.loginTemplate(this.model.toJSON()));
-	  return this;
-	},
-	
-	// re-render the login state
-	render: function() {
-	  console.log('render log view')
-	  this.logArea.show();
-	  this.logArea.html(this.loginTemplate({userName: myLogin.userName, logState : myLogin.logState}));
 	},
 	
 	// toggle the login state
 	toggleLog: function() {
 	  if(!user.token){
-		myLogin.userName = user.userStorage.find(user.nameObj).name;
-		myLogin.login();
-		myLogin.LogState = "Logout";
-		
-		// render the view of login
-		this.render();
+		this.userName = user.userStorage.find(user.nameObj).name;
+		this.login();
+		this.LogState = "Logout";
+		this.isLogged = true;
 	  }
 	  else {
 		// do something to remove the user's info'
-		myLogin.logout();
-		myLogin.userName = myLogin.defaults.userName;
-		myLogin.logState = myLogin.defaults.logState;
+		this.logout();
+		this.userName = "Dear Student";
+		this.logState = "Login";
+		this.isLogged = false;
 		
 		//destroy the user model in local storage
 		user.userStorage.destroy(user.nameObj);
@@ -136,18 +90,11 @@
 		this.render();
 		}
 	  }
-	  
-	  
+	
+  };
 
-  });
-
-// start the view
-$(document).ready(function() {
-  console.log('log view init');
-  var LogView = new LoginView;
-});
-
-
+myLogin = new Login();
+nusivle.myLogin = myLogin;
 
 })();
 

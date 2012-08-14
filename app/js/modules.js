@@ -1,7 +1,6 @@
 // Modules
 
 (function(){
-  
   // Module model
   var Module = Backbone.Model.extend({
 	
@@ -42,13 +41,14 @@
 	
 	model : Module,
 	
-	localStorage : new Store("modules")
+	modulesStorage : new Store("modules")
 	
   });
   
   // global module list collection
   var Modules = new ModuleList;
   
+  var ModuleCount = _.size(ModuleList);
   //----------------------------------------------------------------------------
   
   // Module item View
@@ -121,7 +121,7 @@
   ModulesAppView = Backbone.View.extend({
 	
 	// html element
-	el : $('modules-info'),
+	el : $('#modules-info'),
 	
 	// template for modules-info area
 	modulesAppTempale: _.template($('modulesapp-template').html()),
