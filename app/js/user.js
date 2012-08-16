@@ -44,8 +44,12 @@
 	  
 	  //get modules object of JSON
 	  LAPI.getResponse(LAPI.requestURL("Modules", {Duration : 60, IncludeAllInfo : true}), function(result) {
-		me.modules = result;
-		alert("MODULES : " + result.Results);
+		me.modules = result.Results;
+		alert("MODULES : " + me.modules);
+		
+		// implement modules view
+		ModuleApp = new nusivle.modules;
+		alert(ModuleApp);
 	  });
 	  
 	  
@@ -105,7 +109,7 @@
 //	  this.userStorage.save({token: token});
 	  this.token = token;
 	  
-	  alert("in saveToken : " + this.token);
+//	  alert("in saveToken : " + this.token);
 	  // todoList with token
 	},
 	
@@ -123,5 +127,4 @@
   };
   
   nusivle.user = nusivle.user || new User();  // global
-  console.log("user token = " + nusivle.user.token);
 })();

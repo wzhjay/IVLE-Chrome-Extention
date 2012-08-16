@@ -93,8 +93,8 @@
 	
   };
 
-myLogin = new Login();
-nusivle.myLogin = myLogin;
+
+nusivle.myLogin = nusivle.myLogin || new Login();
 
 })();
 
