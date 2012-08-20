@@ -68,7 +68,6 @@
 	
   });
   
-  
   // create new todoList as global collection
   var Todos = new TodoList;
   console.log(Todos);

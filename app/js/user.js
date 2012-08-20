@@ -26,16 +26,15 @@
 	  
 	  // initial and request for the APIs, save the date into local storage
 	  // get name object of user
-	  LAPI.getResponse(LAPI.requestURL("UserName_Get"), function(result) {
+	  LAPI.getResponse(LAPI.requestLoginURL("UserName_Get"), function(result) {
 //		var str = result.split(" ");
 //		this.name = str[1];
 //		alert(this.name);
-		var data= jQuery.parseJSON(result);
 		alert('username : ' + result);
 	  });
 
 	  // validate user 
-	  LAPI.getResponse(LAPI.requestURL("Validate"), function(result) {
+	  LAPI.getResponse(LAPI.requestLoginURL("Validate"), function(result) {
 		if(result) {
 		  me.validated = true;
 		}
@@ -52,6 +51,11 @@
 		alert(ModuleApp);
 	  });
 	  
+	  //get timetable object of JSON
+	  LAPI.getResponse(LAPI.requestURL("Timetable_Student", {AcadYear : "2012/2013", Semester : 1}), function(result) {
+		me.timetable = result.Results;
+		alert("Timetable_Student : " + me.timetable);
+	  });
 	  
 	  
 //	  
@@ -97,9 +101,9 @@
 	
 	
 	// get the token from location of window
-	getToken: function(token) {
-
-	},
+//	getToken: function(token) {
+//
+//	},
 	
 	
 	// save the token into localStrorage

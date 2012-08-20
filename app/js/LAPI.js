@@ -21,6 +21,18 @@
 	  return url + "&output=json";
 	},
 	
+	// get the request get UserName url with the API name and parameters
+	requestLoginURL : function(name, params) {
+	  var url = this.domain + "api/Lapi.svc/" + name + "?APIKey=" + this.key + "&Token=" + nusivle.user.token;
+	  if(params) {
+		for(var i in params) {
+		  url += "&" + i + "=" + params[i];
+		}
+	  }
+	  
+	  return url + "&output=json";
+	},
+	
 	
 	// get start url, get the token
 	getTokenURL : function() {

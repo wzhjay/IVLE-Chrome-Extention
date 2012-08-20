@@ -6,14 +6,12 @@
   var Module = Backbone.Model.extend({
 	
 	// default attrs for module item
-	defaults : function() {
-	  return {
+	defaults :  {
 		title	: "unknown module...",
 		moduleCode : "unknow module code...",
 		anns	: "no announcements...",
 		workbins: "no workbins...",
 		unreadAnn: 0
-	  };
 	},
 	
 	
@@ -27,23 +25,21 @@
 //	  this.workbins = this.defalults.workbins;
 //	  
 //	  
-	  if(true){
-		this.set({
-		  "title" : this.defaults.title,
-		  "moduleCode" : this.defaults.moduleCode,
-		  "unreadAnn" : this.defaults.unreadAnn,
-		  "anns": this.defaults.anns,
-		  "workbins": this.defalults.workbins
-		  
-		});
-	  }
+//	  if(true){
+//		this.set({
+//		  "title" : this.defaults.title,
+//		  "moduleCode" : this.defaults.moduleCode,
+//		  "unreadAnn" : this.defaults.unreadAnn,
+//		  "anns": this.defaults.anns,
+//		  "workbins": this.defaults.workbins
+//		  
+//		});
+//	  }
 	}  
 	  // link attrs with API data, announcements, workbins
 	  
 	
   });
-  
-  console.log(Module);
   
   var ModuleList = Backbone.Collection.extend({
 	
@@ -51,15 +47,10 @@
 	
 	modulesStorage : new Store("modules")
 	
-//	initialize : function() {
-//	  
-//	}
-	
   });
   
   // global module list collection
   var Modules = new ModuleList;
-  
   //----------------------------------------------------------------------------
   
   // Module item View
@@ -89,50 +80,19 @@
 	// re-render the model items
 	render: function() {
 	  this.$el.html(this.moduleTemplate(this.model.toJSON()));
+	  this.$el.addClass('myModule', this.model.get('title'))
 	  return this;
 	}
 	
-//	// view the module details
-//	viewDetail: function() {
-//	  this.$el.html(this.infoTamplate(this.model.toJSON()));
-//	  return this;
-//	}
-	
   });
 
-  //---------------------------------------------------------------------------
-  
-  // module info view
-//  
-//  var ModuleInfoView = Backbone.View.extend({
-//	
-//	// ..list tag for module
-//	tagName : "div",
-//	
-//	// create the tempalate for module details
-//	infoTamplate : _.template($('#module-info-template').html()),	
-//	
-//	// initialzation and bind events
-//	initialize: function() {
-//	  this.model.bind('change', this.render, this)
-//	},
-//	
-//	
-//	// re-render the model items
-//	render: function() {
-//	  this.$el.html(this.infoTemplate(this.model.toJSON()));
-//	  return this;
-//	}
-//	
-//  });
-  
   
   //----------------------------------------------------------------------------
   
   ModulesAppView = Backbone.View.extend({
 	
 	// html element
-	el : $('#modules-info'),
+	el : $('#modules'),
 	
 	// template for modules-info area
 	modulesAppTempale: null,
@@ -145,25 +105,27 @@
 	// initialzation
 	initialize: function() {
 	  var modules = nusivle.user.modules;
-	  alert("in modules:" + modules);
 	  $.each(modules, function(i, m) {
-		alert("test:" + m.CourseName);
-//		Modules.add(new Module(
-//		  {
-//			title: m.CourseName,
-//			moduleCode: m.CourseCode,
-//			anns: m.Announcements,
-//			workbins: m.Workbins
-//		  })
-//		);
+		alert("test:" + m.Announcements);
+		Modules.add(new Module(
+		  {
+			title : m.CourseName,
+			moduleCode: m.CourseCode,
+			anns: m.Announcements,
+			workbins: m.Workbins
+		  }
+		)
+		);
 	  });
-	  alert("title: " + Modules.at(1).title);
+	  alert((Modules[0].get("anns"))[0].Description);
 	  
-	  this.moduleAppTemplate = _.template($('modulesapp-template').html());
-	  this.moduleArea = this.$('modules-area');
-	  this.infoArea = this.$('info-area');
+	  this.moduleAppTemplate = _.template($('#modulesapp-template').html());
+//	  this.moduleArea = this.$('.modules-area');
+//	  this.infoArea = this.$('.info-area');
 	  
+	  Modules.bind('add', this.showOne, this);
 	  Modules.bind('all', this.render, this);
+	  MOdules.bind('reset', this.showAll, this);
 	  
 	  Modules.fetch();
 	},
@@ -172,15 +134,15 @@
 	render: function() {
 	  var count = Modules.length;
 	  if(count) {
-		this.moduleArea.show();
-		this.moduleArea.html(this.moduleTemplate({count : count, Modules : Modules}));  // pass the model collection to tempalte script
-		this.infoArea.hide();
+//		this.moduleArea.show();
+//		this.moduleArea.html(this.moduleTemplate({title : count}));  // pass the model collection to tempalte script
+//		this.infoArea.hide();
 	  }
 	},
 	
-	showOne: function(module) {
-	  var view  = new ModuleView({model: module});
-	  $('#module-list').append(view.render().el);
+	showOne: function() {
+	  var view  = new ModuleView({model: Module});
+	  $('#modules-list').append(view.render().el);
 	},
 	
 	showAll: function() {
@@ -194,13 +156,8 @@
 //	  this.infoArea.html(info.infoTamplate({anns : anns, workbins : workbins}));
 	
   });
-  
-  $(document).ready(function() {
-   
-   // kick things off
-//  ModuleApp = new ModulesAppView;
-  
- });
-  
+
+// nusivle.module = Module;
+//  nusivle.ModuleList = Modules;
   nusivle.modules = ModulesAppView;
 })();
