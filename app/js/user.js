@@ -12,6 +12,7 @@
 	this.updateSID = undefined;
 	this.userStorage = new Store('user');
 	
+	this.slots = undefined;
 	this.modules = undefined;
 	this.name = "";
 	console.log(this.userStorage);
@@ -48,13 +49,15 @@
 		
 		// implement modules view
 		ModuleApp = new nusivle.modules;
-		alert(ModuleApp);
 	  });
 	  
 	  //get timetable object of JSON
 	  LAPI.getResponse(LAPI.requestURL("Timetable_Student", {AcadYear : "2012/2013", Semester : 1}), function(result) {
-		me.timetable = result.Results;
-		alert("Timetable_Student : " + me.timetable);
+		me.slots = result.Results;
+		alert("Timetable_Student : " + me.slots);
+		
+		//implement timetable object
+		Timetable = new nusivle.timetable;
 	  });
 	  
 	  

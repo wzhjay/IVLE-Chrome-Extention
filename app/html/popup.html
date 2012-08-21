@@ -19,6 +19,7 @@
 	<script src="/app/js/user.js"></script>
 	<script src="/app/js/LAPI.js"></script>
 	<script src="/app/js/modules.js"></script>
+	<script src="/app/js/timetable.js"></script>
 	<script src="/bootstrap/js/bootstrap.js"></script>
 
 	
@@ -96,16 +97,14 @@
 			<!-- Carousel items -->
 			<div class="carousel-inner">
 			  
-<!-- first slide, module grids-->
-<!--			  <div id="modules-info">
+<!-- first slide, timetable-->
 				<div class=" active item">
-				  <ul id="modules-list" class="thumbnails">
-					<li class="item1-grid">
-					  <div><p>Module1</p></div>
-					</li>
+				  <div id="timetable">
+				  <ul id="slots-list">
+	
 				  </ul>
+				  </div>
 				</div>
-			  </div>-->
 <!-- second slide -->
 
 			  <div class="item">
@@ -176,6 +175,16 @@
   </script>
   
   <script type="text/template" id="modulesapp-template">
+  </script>
+  
+  <!--       timetable           -->
+  <script type="text/template" id="slot-template">
+  	<div>
+  		<p><%= slot.moduleCode %></p>
+  	</div>
+  </script>
+  
+  <script type="text/template" id="timetable-template">
   </script>
   </body>
 </html>

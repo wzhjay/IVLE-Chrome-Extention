@@ -2,7 +2,6 @@
 
 (function(){
   // Module model
-  console.log("start loading modules");
   var Module = Backbone.Model.extend({
 	
 	// default attrs for module item
@@ -40,6 +39,8 @@
 	  
 	
   });
+  
+  var module = new Module;
   
   var ModuleList = Backbone.Collection.extend({
 	
@@ -89,7 +90,7 @@
   
   //----------------------------------------------------------------------------
   
-  ModulesAppView = Backbone.View.extend({
+  var ModulesAppView = Backbone.View.extend({
 	
 	// html element
 	el : $('#modules'),
@@ -106,18 +107,19 @@
 	initialize: function() {
 	  var modules = nusivle.user.modules;
 	  $.each(modules, function(i, m) {
-		alert("test:" + m.Announcements);
-		Modules.add(new Module(
-		  {
-			title : m.CourseName,
-			moduleCode: m.CourseCode,
-			anns: m.Announcements,
-			workbins: m.Workbins
-		  }
-		)
-		);
+		
+		module.set({
+		  "title" : m.CourseName,
+		  "moduleCode" : m.CourseCode,
+		  // "unreadAnn" : this.defaults.unreadAnn,
+		  "anns": m.Announcements,
+		  "workbins": m.Workbins
+		  
+		});
+
+		Modules.add(module);
 	  });
-	  alert((Modules[0].get("anns"))[0].Description);
+	  alert((Modules.at(0).get("anns"))[0].Description);
 	  
 	  this.moduleAppTemplate = _.template($('#modulesapp-template').html());
 //	  this.moduleArea = this.$('.modules-area');
@@ -125,7 +127,7 @@
 	  
 	  Modules.bind('add', this.showOne, this);
 	  Modules.bind('all', this.render, this);
-	  MOdules.bind('reset', this.showAll, this);
+	  Modules.bind('reset', this.showAll, this);
 	  
 	  Modules.fetch();
 	},
@@ -146,7 +148,7 @@
 	},
 	
 	showAll: function() {
-	  Modules.each(this.showOne)
+	  Modules.each(this.showOne);
 	}
 	
 	
