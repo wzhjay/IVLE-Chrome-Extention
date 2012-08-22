@@ -168,7 +168,6 @@
 	  console.log('initialize todolist view');
 //	  return;
 	  this.statsTemplate = _.template($('#stats-template').html());
-	  console.log(this.statsTemplate);
       this.input = $("#new-todo");
       this.allCheckbox = $("#toggle-all")[0];
 	  
@@ -206,7 +205,6 @@
 	  addOne: function(todo) {
 		var view = new TodoView({model: todo});
 		$("#todo-list").append(view.render().el);
-		console.log('one item added');
     },
 	  
 	  // add all items in the Todos collection at once

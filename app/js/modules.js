@@ -107,8 +107,8 @@
 	initialize: function() {
 	  var modules = nusivle.user.modules;
 	  $.each(modules, function(i, m) {
-		
-		module.set({
+		// alert('modules: ' + m.CourseName + m.CourseCode + m.Announcements + m.Workbins);
+		module = new Module({
 		  "title" : m.CourseName,
 		  "moduleCode" : m.CourseCode,
 		  // "unreadAnn" : this.defaults.unreadAnn,
@@ -117,9 +117,9 @@
 		  
 		});
 
-		Modules.add(module);
+		Modules.add(module, { at : i });
+		// alert(Modules.at(i).get('moduleCode'));
 	  });
-	  alert((Modules.at(0).get("anns"))[0].Description);
 	  
 	  this.moduleAppTemplate = _.template($('#modulesapp-template').html());
 //	  this.moduleArea = this.$('.modules-area');

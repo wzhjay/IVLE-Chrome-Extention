@@ -27,7 +27,7 @@
 		
 		model : Slot,
 		
-		slotsStorage : new Store("slots")
+		slotStorage : new Store("slots")
 	});
 	
 	
@@ -60,9 +60,9 @@
 			var slots = nusivle.user.slots;
 			alert(slots.length);
 			$.each(slots, function(j, s){
-				alert("test : " + s.ModuleCode + s.LessonType + s.StartTime + s.EndTime + s.DayText +  s.WeekText + s.Venue);
+				// alert("test : " + s.ModuleCode + s.LessonType + s.StartTime + s.EndTime + s.DayText +  s.WeekText + s.Venue);
 				
-				slot.set({
+				slot = new Slot({
 					'moduleCode' : s.ModuleCode,
 					'lessonType' : s.LessonType,
 					'startTime' : s.StartTime,
@@ -71,26 +71,25 @@
 					'weekText' : s.WeekText,
 					'venue' : s.Venue
 				});
-				
-				Slots.add(slot);
-
-				// this.model.save({moduleCode : s.ModuleCode,
-						// lessonType : s.LessonType,
-						// startTime : s.StartTime,
-						// endTime : s.EndTime,
-						// dayText : s.DayText,
-						// weekText : s.WeekText,
-						// venue : s.Venue});
+				Slots.add(slot, { at: j});
+				// alert(Slots.at(j).get('lessonType'));
+				this.model.save({
+					'moduleCode' : s.ModuleCode,
+					'lessonType' : s.LessonType,
+					'startTime' : s.StartTime,
+					'endTime' : s.EndTime,
+					'dayText' : s.DayText,
+					'weekText' : s.WeekText,
+					'venue' : s.Venue
+				});
 			});
-			alert(Slots.length);
-			alert(Slots.at(0).get('moduleCode'));
 			
 			this.timetableTemplate = _.template($('#timetable-template').html());
 			
 			Slots.bind('add', this.showOne, this);
 			Slots.bind('all', this.render, this);
-			Slots.bind('reset', this.render, this);
-			
+			Slots.bind('reset', this.showAll, this);
+			alert("fetch: " + Slots.length);
 			Slots.fetch();
 		},
 		
@@ -99,15 +98,15 @@
 			
 		},
 		
-		showOne : function() {
-			var view = new SlotView({model : Slot});
+		showOne : function(slot) {
+			var view = new SlotView({model : slot});
 			$('#slots-list').append(view.render().el);
 		},
 		
 		showAll : function() {
-			Slot.each(this.showOne);
-		},
+			Slots.each(this.showOne);
+		}
 	});
-	
+	console.log('Slots: ' + Slots.length);
 	nusivle.timetable = TimetableView;
 })();
