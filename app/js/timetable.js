@@ -27,7 +27,7 @@
 		
 		model : Slot,
 		
-		slotStorage : new Store("slots")
+		localStorage : new Store("slots")
 	});
 	
 	
@@ -40,8 +40,11 @@
 		slotTemplate : null,
 		
 		initialize : function() {
-			this.slotTemplate = _.template(('#slot-template').html());
-			this.model.bind('change', this.render, this);
+		  alert('start Slotview 1');
+		  this.slotTemplate = _.template($('#slot-template').html());
+		  alert('start Slotview 2');
+		  this.model.bind('change', this.render, this);
+		  alert('start Slotview 3');
 		},
 		
 		render : function() {
@@ -58,7 +61,7 @@
 		
 		initialize : function() {
 			var slots = nusivle.user.slots;
-			alert(slots.length);
+
 			$.each(slots, function(j, s){
 				// alert("test : " + s.ModuleCode + s.LessonType + s.StartTime + s.EndTime + s.DayText +  s.WeekText + s.Venue);
 				
@@ -73,24 +76,24 @@
 				});
 				Slots.add(slot, { at: j});
 				// alert(Slots.at(j).get('lessonType'));
-				this.model.save({
-					'moduleCode' : s.ModuleCode,
-					'lessonType' : s.LessonType,
-					'startTime' : s.StartTime,
-					'endTime' : s.EndTime,
-					'dayText' : s.DayText,
-					'weekText' : s.WeekText,
-					'venue' : s.Venue
+				slot.save({
+					moduleCode : s.ModuleCode,
+					lessonType : s.LessonType,
+					startTime : s.StartTime,
+					endTime : s.EndTime,
+					dayText : s.DayText,
+					weekTex : s.WeekText,
+					venue : s.Venue
 				});
 			});
-			
-			this.timetableTemplate = _.template($('#timetable-template').html());
-			
+			alert("fetch: " + Slots.length);
+//			this.timetableTemplate = _.template($('#timetable-template').html());
 			Slots.bind('add', this.showOne, this);
 			Slots.bind('all', this.render, this);
 			Slots.bind('reset', this.showAll, this);
-			alert("fetch: " + Slots.length);
-			Slots.fetch();
+//			Slots.fetch();
+			this.showAll();
+			alert('Slots: ' + Slots.length);
 		},
 		
 		
@@ -99,14 +102,18 @@
 		},
 		
 		showOne : function(slot) {
-			var view = new SlotView({model : slot});
-			$('#slots-list').append(view.render().el);
+		  alert('2');
+		  var view = new SlotView({model : slot});
+		  alert('3');
+		  $('#slots-list').append(view.render().el);
+		  alert('4');
 		},
 		
 		showAll : function() {
+		  alert('1')
 			Slots.each(this.showOne);
 		}
 	});
-	console.log('Slots: ' + Slots.length);
+
 	nusivle.timetable = TimetableView;
 })();
